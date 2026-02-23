@@ -1,13 +1,9 @@
-# For PCBs designed using KiCad: https://www.kicad.org/
-# Format documentation: https://kicad.org/help/file-formats/
-
 # --- Root Level ---
 # Ignore OS-generated files
 .DS_Store
 Thumbs.db
 
 # --- PCB Subfolder Level ---
-# Replace 'PCB_Folder_Name/' with your actual folder name
 Hardware/opm/History/
 Hardware/opm/__Preview/
 Hardware/opm/Project\ Outputs*/
