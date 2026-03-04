@@ -1,0 +1,16 @@
+.104JT-025 :1 ;NTC THERMISTORS 100KOHM 1% LENGT
+"104JT025"
+*STM RT
+*NGS
+*PLB 1="1" 2="2"
+*MXP 2
+*DFN 104JT-025
+~!Mouser Part Number (954-104JT-025)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Semitec/104JT-025?qs=%252B6g0mu59x7KTJiBhCe3nqw%3D%3D)
+~!Manufacturer_Name (Semitec)
+~!Manufacturer_Part_Number (104JT-025)
+~!Link Datasheet (https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf)
+~!Height (22mm)
+~!3D_Model (104JT-025)
+"104JT-025"
+1.1!U 2.1!U 

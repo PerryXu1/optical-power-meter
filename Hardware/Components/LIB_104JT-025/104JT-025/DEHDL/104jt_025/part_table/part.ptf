@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART '104JT_025'
+CLASS = DISCRETE
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Semitec", "104JT-025" (!) = "", "104JT025", "Other", "954-104JT-025", "https://www.mouser.co.uk/ProductDetail/Semitec/104JT-025?qs=%252B6g0mu59x7KTJiBhCe3nqw%3D%3D", "NTC THERMISTORS 100KOHM 1% LENGT", "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf", "22 mm"
+END_PART
+
+END.
