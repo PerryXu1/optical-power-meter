@@ -1,0 +1,66 @@
+(Japanese_coding: sjis)
+(function "ECS_4483198"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-10-14-08:10:00)
+    (utime 2024-10-21-11:16:58)
+    (interface
+        (port "1" (symbPinId 1) (portType INOUT))
+        (port "2" (symbPinId 2) (portType INOUT))
+    )
+    (property "symbolName" "104JT-025")
+)
+
+
+(pinAssign "ECS_4483198"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-10-14-08:10:00)
+    (utime 2024-10-21-11:16:58)
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (internal
+        (funcInst (functionRef "ECS_4483198")
+                (port "1" (match "1"))
+                (port "2" (match "2"))
+        )
+    )
+    (property "usePowerBox" "No")
+    (property "symbolName" "104JT-025")
+)
+
+
+(part "104JT-025"
+    (uver 1)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (ctime 2024-10-14-08:10:00)
+    (utime 2024-10-21-11:16:58)
+    (packageRef "104JT-025")
+    (pinAssignRef "ECS_4483198")
+    (interface
+        (port "1" (symbPinId 1) (portName "1") (portType INOUT))
+        (port "2" (symbPinId 2) (portName "2") (portType INOUT))
+    )
+    (partClass UNDEF)
+    (useInSchema Y)
+    (useInLayout Y)
+    (inPartsList Y)
+    (partType NORMAL)
+    (placeRestriction FREE)
+    (property "enetNonSeries" "YES")
+    (property "refDesPrefix" "RT")
+    (property "description" "NTC THERMISTORS 100KOHM 1% LENGT")
+    (property "Mouser_Part_Number" "954-104JT-025")
+    (property "Mouser_Price/Stock" "https://www.mouser.co.uk/ProductDetail/Semitec/104JT-025?qs=%252B6g0mu59x7KTJiBhCe3nqw%3D%3D")
+    (property "Manufacturer_Name" "Semitec")
+    (property "Manufacturer_Part_Number" "104JT-025")
+    (property "Datasheet_Link" "https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf")
+    (property "compAreaTopHeight" 22)
+)
+
+

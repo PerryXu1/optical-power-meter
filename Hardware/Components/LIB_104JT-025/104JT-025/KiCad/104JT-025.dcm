@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 104JT-025
+D NTC THERMISTORS 100KOHM 1% LENGT
+K
+F https://www.semitec-global.com/uploads/2022/01/P9-JT-Thermistor.pdf
+$ENDCMP
+#
+#End Doc Library
