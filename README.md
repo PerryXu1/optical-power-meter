@@ -3,6 +3,7 @@
 A high-precision, battery-powered optical power meter built to be robust against noise, temperature drift, and EMI. It measures the intensity of monochromatic light across **80 dB of dynamic range**, using an auto-ranging transimpedance front end, a 24-bit delta-sigma ADC, and a shielded, carefully partitioned PCB.
 
 **Tools:** Altium Designer · LTspice · C (firmware) · Python (host interface)
+
 **Timeline:** February 2026 – March 2026
 
 <!-- Add a hero photo or PCB render here:
@@ -20,18 +21,6 @@ A high-precision, battery-powered optical power meter built to be robust against
 - **Auto-ranging firmware in C** that switches op amp feedback paths and ADC gain to maximize range and sensitivity without range "chatter."
 - **Temperature and dark-current compensation** using a thermistor bonded to the photodiode and an automatic dark-current zeroing step at power-on.
 - **Python interface** for automatic calibration and optical measurement.
-
-## Scope
-
-| The meter **will** | The meter **will not** |
-| --- | --- |
-| Measure the intensity of monochromatic light (the user supplies the wavelength) | Measure non-monochromatic or mixed-light sources |
-| Account for dark current | |
-| Account for the temperature dependence of the photodiode | |
-
-**Goals:** precision, robustness (temperature, EMI, noise, dark current), and wide dynamic range.
-
----
 
 ## System Overview
 
@@ -83,16 +72,6 @@ Noise-conscious layout choices: twisted lead wires, a guard ring between photodi
 
 ### 4. I/O subsystem
 USB connector, **USBLC6-2** TVS diode array for ESD protection, UART-to-USB bridge, and isolator. The MCU is programmed over an SWD header. The user supplies the wavelength (or a preset for common sources such as white light or specific lamps) from the PC application, and measurements are returned to the same program.
-
----
-
-## PCB Design
-
-- **Concentric layout ("target" model):** photodiode and op amp inputs at the center, surrounded by guard rings. Then the op amp and its bypass capacitors, then the regulators and ADC, and finally the MCU and USB on the outer edge. Noisy parts sit at the edge and quiet parts in the center.
-- **Guard rings** around the high-impedance junction where the photodiode meets the op amp inverting input and feedback network, tied to the input potential (ground for the TIAs). On two-layer boards they are placed on both sides and stitched with vias.
-- **Faraday cage** enclosing the analog chain (mux through ADC), connected to ground at a single point near the battery with a screw.
-- **Split ground plane:** separate analog and digital grounds that meet at a single star point under the ADC.
-- **Isolation:** the USB side and the system side are galvanically separated by the isolator and DC-DC converter.
 
 ---
 
@@ -157,12 +136,6 @@ optical-power-meter/
 ├── LICENSE
 └── README.md
 ```
-
-<!-- Add Firmware/ and Software/ (Python) folders to this tree once they are committed. -->
-
-## Development Workflow
-
-Research → block diagram → simulation → PCB design → order parts → test → adjust PCB → order PCB → firmware → test PCB
 
 ## Key Components
 
